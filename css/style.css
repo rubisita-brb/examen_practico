@@ -1,270 +1,268 @@
 *{
-    box-sizing: border-box;
+box-sizing:border-box;
 }
 
 body{
-    margin: 0;
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: #1f140d;
-    color: #f1e3c6;
+margin:0;
+min-height:100vh;
+overflow-x:hidden;
+background:#1f140d;
+color:#f1e3c6;
+display:grid;
+grid-template-rows:auto 1fr auto;
+grid-template-areas:
+"header"
+"content"
+"footer";
+}
 
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header"
-        "content"
-        "footer";
+.navbar{
+background:#2b1a11 !important;
+border-bottom:3px solid #d79a3a;
+padding:12px 25px;
+}
+
+.navbar-brand{
+color:#f7d9a3 !important;
+font-weight:bold;
+font-size:1.4rem;
+letter-spacing:1px;
+}
+
+.navbar-brand:hover{
+color:#ffd27c !important;
+}
+
+.nav-link{
+color:#f1e3c6 !important;
+font-weight:500;
+margin-right:15px;
+transition:0.3s;
+}
+
+.nav-link:hover{
+color:#ffd27c !important;
+}
+
+.navbar-toggler{
+border:1px solid #d79a3a;
+}
+
+.navbar-toggler-icon{
+filter:invert(1);
 }
 
 header{
-    grid-area: header;
-    background-color: #3a2416;
-    border-bottom: 3px solid #d79a3a;
+grid-area:header;
+width:100%;
 }
 
 main{
-    grid-area: content;
-    padding: 10px;
-    color: #f1e3c6;
+grid-area:content;
+padding:10px;
 }
 
 footer{
-    grid-area: footer;
-    background: #2a1a11;
-    color: #e9d7b2;
-    text-align: center;
-    padding: 12px;
+grid-area:footer;
+background:#2a1a11;
+color:#e9d7b2;
+text-align:center;
+padding:15px;
+border-top:3px solid #d79a3a;
 }
 
 img{
-    max-width: 100%;
-    height: auto;
+max-width:100%;
+height:auto;
 }
 
 .btn,
 button{
-    background-color: #d79a3a !important;
-    border-color: #d79a3a !important;
-    color: white !important;
+background-color:#d79a3a !important;
+border-color:#d79a3a !important;
+color:white !important;
 }
 
 .btn:hover,
 button:hover{
-    background-color: #b87f2e !important;
-    border-color: #b87f2e !important;
+background-color:#b87f2e !important;
+border-color:#b87f2e !important;
 }
 
 .containercard{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 20px;
-    flex-wrap: wrap;
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:20px;
+margin-bottom:15px;
+flex-wrap:wrap;
 }
 
 .card{
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    background-color: #f4e6c9;
-    color: #2c1b12;
-    transition: transform 0.2s;
+width:100%;
+max-width:300px;
+border-radius:10px;
+background-color:#f4e6c9;
+color:#2c1b12;
+transition:transform 0.2s;
+border:none;
 }
 
 .card img{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+width:100%;
+height:180px;
+object-fit:cover;
 }
 
 .card:hover{
-    transform: scale(1.05);
+transform:scale(1.05);
 }
 
 .intro{
-    min-height: 100vh;
-    padding: 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    color: white;
-
-    background: linear-gradient(
-        to bottom,
-        #2e1b12,
-        #5a2d1a,
-        #2e1b12
-    );
+min-height:100vh;
+padding:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(
+to bottom,
+#2e1b12,
+#5a2d1a,
+#2e1b12
+);
 }
 
 .intro-content{
-    max-width: 100%;
+max-width:100%;
 }
 
 .intro h1{
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #f7d9a3;
+font-size:2.6rem;
+margin-bottom:20px;
+color:#f7d9a3;
 }
 
 .intro p{
-    font-size: 1rem;
-    margin-bottom: 20px;
+font-size:1.2rem;
+margin-bottom:25px;
 }
 
 .investigaciones{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:10px;
 }
 
 .columna{
-    flex: 1;
+flex:1;
 }
 
 .carrusel{
-    width: 100%;
-    padding: 10px;
+width:100%;
+padding:10px;
+margin-top:60px;
 }
 
 .carrusel img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+width:100%;
+height:250px;
+object-fit:cover;
 }
 
 .carousel-caption{
-    background: rgba(0,0,0,0.65);
-    color: #f1e3c6;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 0.9rem;
+background:rgba(0,0,0,0.65);
+color:#f1e3c6;
+padding:20px;
+border-radius:10px;
+font-size:0.9rem;
 }
 
 #comprar{
-    background-color: #4a2a19;
-    padding: 50px;
-    border-radius: 20px;
-    color: #f1e3c6;
+background-color:#4a2a19;
+padding:50px;
+border-radius:20px;
+color:#f1e3c6;
 }
 
 #comprar label{
-    color: #f3d9a8;
+color:#f3d9a8;
 }
 
 .botoncito{
-    text-align: center;
-    margin-top: 20px;
+text-align:center;
+margin-top:20px;
 }
 
 .botoncito button{
-    background-color: #d79a3a;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    cursor: pointer;
+border:none;
+border-radius:12px;
+padding:12px 25px;
+font-size:1.2rem;
+cursor:pointer;
 }
 
-.botoncito button:hover{
-    background-color: #b87f2e;
+@media (min-width:768px){
+
+.containercard{
+gap:30px;
 }
 
-@media (min-width:768px) and (orientation:portrait){
-
-    .containercard{
-        gap: 25px;
-    }
-
-    .card{
-        max-width: 260px;
-    }
-
-    .intro h1{
-        font-size: 2.5rem;
-    }
-
-    .intro p{
-        font-size: 2.a1rem;
-    }
-
-    .investigaciones{
-        flex-direction: row;
-    }
-
-    .carrusel img{
-        height: 320px;
-    }
-
+.card{
+max-width:260px;
 }
 
-@media (min-width:768px) and (orientation:landscape){
+.intro h1{
+font-size:3rem;
+}
 
-    .containercard{
-        gap: 30px;
-    }
+.intro p{
+font-size:1.3rem;
+}
 
-    .card{
-        max-width: 250px;
-    }
+.investigaciones{
+flex-direction:row;
+}
 
-    .investigaciones{
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    .intro h1{
-        font-size: 2.7rem;
-    }
-
-    .intro p{
-        font-size: 1.6rem;
-    }
-
-    .carrusel img{
-        height: 360px;
-    }
+.carrusel img{
+height:320px;
+}
 
 }
 
 @media (min-width:1200px){
 
-    main{
-        padding: 30px;
-    }
+main{
+padding:30px;
+}
 
-    .containercard{
-        gap: 40px;
-    }
+.containercard{
+gap:40px;
+}
 
-    .card{
-        max-width: 300px;
-    }
+.card{
+max-width:300px;
+}
 
-    .intro h1{
-        font-size: 3rem;
-    }
+.intro h1{
+font-size:3.5rem;
+}
 
-    .intro p{
-        font-size: 1.2rem;
-        max-width: 800px;
-        margin: auto;
-        margin-bottom: 25px;
-    }
+.intro p{
+font-size:1.4rem;
+max-width:800px;
+margin:auto;
+margin-bottom:25px;
+}
 
-    .carrusel img{
-        height: 450px;
-    }
+.carrusel img{
+height:450px;
+}
 
-    #comprar{
-        max-width: 900px;
-        margin: auto;
-    }
+#comprar{
+max-width:900px;
+margin:auto;
+}
 
 }
